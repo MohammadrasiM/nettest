@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply w-full  min-h-screen  md:w-[70%] lg:w-[60%] xl:w-1/2 px-6 md:px-6 max-w-[580px]  overflow-x-hidden h-auto     mx-auto bg-white      pb-24  pt-20   md:rounded-md;
+}
+
+html,
+body {
+  padding: 0;
+  color: #141414;
+
+  margin: 0;
+
+  /* background-color: #18181b; */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url("/assets/image/thumb.png");
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 30px;
+  border: 0;
+  background: url("/assets/image/thumb.png");
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.app-text {
+  @apply text-textGray-100 dark:text-textGray-100;
+}
+
+.btn-primary {
+  @apply bg-blue-950 dark:bg-blue-950   text-blue-200   hover:scale-95 hover:ring-blue-950/50 dark:hover:ring-blue-950/50 cursor-pointer;
+}
